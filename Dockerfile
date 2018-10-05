@@ -135,6 +135,6 @@ RUN echo "Timestamp:" `date --utc` | tee /image-build-info.txt
 
 COPY NAMD_2.12_Linux-x86_64-multicore.tar.gz /opt/NAMD_2.12_Linux-x86_64-multicore.tar.gz
 
-RUN cd /opt && tar -xzvf NAMD_2.12_Linux-x86_64-multicore.tar.gz && 
+RUN cd /opt && tar -xzvf NAMD_2.12_Linux-x86_64-multicore.tar.gz
 
 ENV PATH="/opt/NAMD_2.12_Linux-x86_64-multicore:${PATH}"
